@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highradius</title>
+    <style>
+        .modal-delete--hidden{
+            display:none;
+        }
+        .modal-edit--hidden{
+            display:none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <img id="abc" src="resources/abcsvg.svg" alt="ABC Products">
+        <span id="highradius"><img src="resources/hrc.png" alt="Highradius"></span>
+    </header>
+    <div class="invoice">
+        <p>Invoice List</p>
+    </div>
+    <div class="workarea">
+        <!--==================Button Group Start===================-->
+        <div class="button-container">
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Search by Invoice Number">
+                <a class="search-btn" href="#">
+                    <img src="svgs/search-24px (3).svg" height="18px">
+                </a>
+            </div>
+            <div class="delete-box">
+                <button id="del-btn-id" class="delete-txt">
+                    <a class="delete-btn" href="#">
+                        <img src="svgs/delete.svg" height="12px" width="12px" style="padding-right: 5px;">
+                        Delete
+                    </a> 
+                </button>
+            </div>
+            <div class="edit-box">
+                <button id="edit-btn-id" class="edit-txt">
+                    <a class="edit-btn" href="#">
+                        <img src="svgs/edit.svg" height="12px" style="padding-right: 5px;" >
+                        Edit
+                    </a>
+                </button>
+            </div>
+            <div class="add-box">
+                <button id="click" class="add-txt">
+                    <a class="add-btn" href="#">
+                        <img src="svgs/add.svg" height="12px" style="padding-right: 5px;" >
+                        Add
+                    </a>
+                </button>
+            </div>
+        </div>
+        <!--========================Button Group End=====================-->
+        <div class="tab">
+            <table class="table1" id="table_body">
+                <!--  
+                <tr class="oddrow">
+                    <th><input type="checkbox" onclick="selectAllRow(this)" name="name1" />
+                        <span class="graybox"></span>
+                    </th>
+
+                    <th>Customer Name</th>
+                    <th>Customer #</th>
+                    <th>Invoice #</th>
+                    <th>Invoice Amount</th>
+                    <th class="duedate"><span class="duedateheading">Due Date</span></th>
+                    <th>Predicted Payment Date</th>
+                    <th>Notes</th>
+                </tr>
+                -->
+                
+                <!--  
+                <tr class="evenrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">22-09-2022</span></td>
+                    <td>Good boy</td>
+                </tr>
+                <tr class="oddrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                </tr>
+                <tr class="evenrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                </tr>
+                <tr class="oddrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                <tr class="evenrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                </tr>
+                <tr class="oddrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                <tr class="evenrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                </tr>
+                <tr class="oddrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                <tr class="evenrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                </tr>
+                <tr class="oddrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                <tr class="evenrow">
+                    <td><input type="checkbox" name="name1" />&nbsp;</td>
+                    <td>Shashank Verma</td>
+                    <td>Amazon</td>
+                    <td>123456</td>
+                    <td class="invoiceamt"><span class="invoicetxt">50,000</span></td>
+                    <td>24-09-2022</td>
+                    <td class="paymentdate"><span class="textppd">--</span></td>
+                    <td>Good boy</td>
+                </tr>
+                </tr>
+                -->
+            </table>
+        </div>
+        <!--============================(1)============== Modals Starting ==================================================-->
+        <div class="Modaladd modal--hidden">
+            <div class="modal-add-contents">
+                
+                <!--=============(2)=====Modal Heading=====================-->
+                <div class="modal-add-heading" >
+                    <span>Add Invoice</span>
+                    <span id="modal-add-cross" class="modal_close-bar"><img src="resources/close.png" ></span>
+                </div>
+                <!--==============(2)====Modal Heading Ending===============-->
+
+
+                <!--=========(3)===========Modal form starting======================-->
+                <div class="modal-add-form">
+                    <form class="add-form" id="learn-more">
+
+                        <div class="row">
+                            <!--======(4)==========First Column of the form===================-->
+                            <div class="column" >
+                                <div class="form-row-left">
+                                    <label for="cname">Customer Name<span style="color:#FF5B5B;"> *</span></label>
+                                    <input type="text" id="cname" name="cname" style="color:white;"><br>
+                                </div>
+
+                                <div class="form-row-left">
+                                    <label for="cnum">Customer No.<span style="color:#FF5B5B;"> *</span></label>
+                                    <input type="text" id="cnum" name="cnum" style="color:white;"><br>
+                                </div>
+
+                                <div class="form-row-left">
+                                    <label for="invno">Invoice No.<span style="color:#FF5B5B;"> *</span></label>
+                                    <input type="text" id="invno" name="invno" style="color:white;"><br>
+                                </div>
+
+                                <div class="form-row-left">
+                                    <label for="invamt">Invoice Amount<span style="color:#FF5B5B;"> *</span></label>
+                                    <input type="text" id="invamt" name="invamt" style="color:white;"><br>
+                                
+                                </div>
+                            </div>
+
+                            <!--=========(4)=====2nd Column of the form=======================-->
+                            <div class="column" >
+                                <div class="form-row-right">
+                                    <label for="duedate">Due Date<span style="color:#FF5B5B;"> *</span></label>
+                                    <input type="date" id="duedate" name="duedate"  style="color:white;"><br>
+                                </div>
+
+                                <div class="form-row-right">
+                                    <label for="notes">Notes</label>
+                                    <textarea id="notes" name="notes" rows="4" cols="50" style="color:white;"></textarea>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <!--===============Modal add footer starting =================-->
+                        <div class="modal-add-footer">
+                            <div class="modal-cancel-box">
+                                <button class="modal-cancel-txt">
+                                    <a class="modal-cancel-btn">
+                                        Cancel
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="modal-add-box">
+                                <button class="modal-add-txt" onclick="addInvoice()">
+                                    <a class="modal-add-btn">
+                                        Add
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="modal-clear-box">
+                                <button class="modal-clear-txt" onclick="clearAddModal()">
+                                    <a class="modal-clear-btn">
+                                        Clear
+                                    </a>
+                                </button>
+                            </div>
+
+                            
+
+                        </div>
+                        <!--=========================Modal add footer End================-->
+                          
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!--============================================Deletion Modal Designing================================================-->
+        <div class="modal-delete modal-delete--hidden">
+            <div class="modal-delete-contents">
+                
+                <!--=============(2)=====Modal Heading=====================-->
+                <div class="modal-delete-heading" >
+                    <span>Delete Record(s)?</span>
+                    <span id="modal-delete-cross" class="modal_close-bar"><img src="resources/close.png" ></span>
+                </div>
+                <!--=====================Modal Heading end==================-->
+
+                <div class="modal-delete-body">
+                    <p>You'll lose your record(s) after this action. We can't recover them once you delete.</p>
+                    <p>Are you sure you want to <span style="color:#FF5E5E">permanently delete</span> them?</p>
+                </div>
+                
+
+                <div class="modal-delete-footer">
+                    
+                    <div class="modal-delete-box">
+                        <button class="modal-delete-txt">
+                            <a class="modal-delete-btn">
+                                Delete
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="modal-delete-cancel-box">
+                        <button id="modal-del-can-btn" class="modal-delete-cancel-txt">
+                            <a class="modal-delete-cancel-btn">
+                                Cancel
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--======================================================Modal Delete End========================================-->
+
+
+
+
+        <div class="modal-edit modal-edit--hidden">
+            <div class="modal-edit-contents">
+                <!--========================Modal Edit Heading==============================-->
+                <div class="modal-edit-heading">
+                    <span>Edit Invoice</span>
+                    <span id="modal-edit-cross" class="modal_close-bar"><img src="resources/close.png" ></span>
+                </div>
+                <!--======================Modal edit heading end============================-->
+
+                <div class="modal-edit-body">
+                    <form id="edit-form-id" class="modal-edit-form">
+                        <div class="modal-edit-input-section">
+                            <div class="modal-edit-form-invamt">
+                                <label for="edit-invamt">Invoice Amount</label>
+                                <input type="text" id="modal-edit-amount" name="edit-invamt"><br>
+                            </div>
+
+                            <div class="modal-edit-form-notes">
+                                <label for="edit-notes">Notes</label>
+                                <textarea id="edit-notes" name="edit-notes" rows="4" cols="50"></textarea>
+                            </div>
+                        </div>
+
+                        <!--=====================Modal Edit footer============================-->
+                        <div class="modal-edit-footer">
+                            <div class="modal-edit-save-box">
+                                <button class="modal-edit-save-txt">
+                                    <a class="modal-edit-save-btn">
+                                        Save
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="modal-edit-reset-box">
+                                <button class="modal-edit-reset-txt">
+                                    <a class="modal-edit-reset-btn">
+                                        Reset
+                                    </a>
+                                </button>
+                            </div>
+
+                            <div class="modal-edit-cancel-box">
+                                <button class="modal-edit-cancel-txt">
+                                    <a class="modal-edit-cancel-btn">
+                                        Cancel
+                                    </a>
+                                </button>
+                            </div>
+
+                            
+
+                        </div>
+
+
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class = "next-btn">
+        
+        <button onclick="nextpg()">
+            >
+        </button>
+
+    </div>
+
+    <div class = "prev-btn">
+        
+         <button onclick="prevpg()">
+            <
+        </button>
+
+    </div>
+
+    
+</body>
+<script src="index.js"></script>
+
+
+</html>

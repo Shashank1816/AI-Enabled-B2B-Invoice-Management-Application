@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Summer_Internship_Backend</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>style.css</welcome-file>
+    <welcome-file>index.js</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>FetchDataServlet</servlet-name>
+    <servlet-class>com.higradius.FetchDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchDataServlet</servlet-name>
+    <url-pattern>/fetch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddDataServlet</servlet-name>
+    <servlet-class>com.higradius.AddDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddDataServlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EditDataServlet</servlet-name>
+    <servlet-class>com.higradius.EditDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditDataServlet</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteDataServlet</servlet-name>
+    <servlet-class>com.higradius.AddDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteDataServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SearchDataServlet</servlet-name>
+    <servlet-class>com.higradius.SeachDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchDataServlet</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
