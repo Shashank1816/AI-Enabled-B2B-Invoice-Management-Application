@@ -32,29 +32,30 @@ An Application that displays the invoice details and predicts the date of paymen
 ---
 
 ## :computer: Screenshots
-- **Enter Money**
-<img src="readmeImages/homepage.png"/>
+- **Landing Page**
+<img src="https://github.com/Shashank1816/Invoice-App/blob/master/readmeImages/Homepage.png"/>
 <br>
-- **Select Drinks**
-<img src="readmeImages/2.jpeg"/>
-<br>
-- **Billing Stage**
-<img src="images/3.jpeg"/>
-<br>
-- **Response When Insufficient Amount Is Paid**
-<img src="images/4.jpeg"/>
-<br>
- - **Adding Extra Money Which Was Asked**
-<img src="images/5.jpeg"/>
-<br>
-- **Reset Option To Termninate Ongoing Transaction**
-<img src="images/6.jpeg"/>
 
+- **Next Page (Pagination)**
+<img src="https://github.com/Shashank1816/Invoice-App/blob/master/readmeImages/nextpage.png"/>
+<br>
+
+- **Adding an Invoice**
+<img src="https://github.com/Shashank1816/Invoice-App/blob/master/readmeImages/add.png"/>
+<br>
+
+- **Editing an Invoice**
+<img src="https://github.com/Shashank1816/Invoice-App/blob/master/readmeImages/edit.png"/>
+<br>
+
+ - **Deleting an Invoice**
+<img src="https://github.com/Shashank1816/Invoice-App/blob/master/readmeImages/delete.png"/>
+<br>
 ---
 
 ## :man: Project Created & Maintained By
 
-<img src = "images/shashank.jpeg"  height="200" width="120" alt=""> <br>**Shashank Verma**
+<img src = "https://github.com/Shashank1816/Invoice-App/blob/master/readmeImages/shashankimage.jpg"  height="200" width="145" alt=""> <br>**Shashank Verma**
 <p>
 <a href = "https://github.com/Shashank1816"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
 <a href = "https://www.linkedin.com/in/shashank-verma-5a671316b/">
