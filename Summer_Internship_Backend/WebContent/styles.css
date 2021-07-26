@@ -1,0 +1,696 @@
+body{
+    background-color:#58687E;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+header {
+    color:#FFFFFF;
+    font-size:42px;
+}
+#logo{
+    float:left;
+}
+#highradius{
+    margin-left:22%
+}
+#abc{
+    float:left;
+
+}
+.invoice{
+    text-align: left;
+    font-size:25px;
+    color:#FFFFFF;
+    background-color: #58687E;
+}
+.workarea{
+    background-color: #273D49CC;
+    height:600px;
+    border-radius:4px;
+    
+}
+/* .btn-group{
+    float:right;
+    margin-top:20px;
+}
+
+.btn-group button{
+    padding:6px 0 6px 0;
+    font-size:18px;
+    width:90px;
+    color:#ffffff;
+    opacity: 0.8;
+    background-color: #39495E;
+    border:2px solid #14AFF1;
+    border-radius:8px;
+    margin-left:1px;
+    margin-right:10px;
+}
+.btn-group .delete{
+    width:105px;
+}
+.btn-group .edit{
+    width:100px;
+}
+#deletesymbol{
+    position:relative;
+    bottom:5px;
+} */
+/* .search-box{
+    padding:6px 80px 6px 10px;
+    font-size:15px;
+    margin-right:20px;
+    background-color: #39495E;
+    border-width: 2px;
+    border-color: black;
+    border-radius:8px;
+    text-align:left; 
+}*/
+/* .search-box{
+    border:2px solid #14AFF1;
+    padding:8px 10px 8px 0px;
+    border-radius:8px;
+    vertical-align: auto;
+    margin-right:20px;
+    background-color:#283A46;
+} */
+/* .search-area{
+    border:none;
+    width:210px;
+    font-size:15px;
+    background-color:#283A46;
+}
+.search-btn{
+    position:relative;
+    top:6px;
+} */
+
+ /* .search-box{
+    float:right;
+    /* border:2px solid #14AFF1;
+    margin-top:20px;
+    margin-right:20px;
+    border-radius:8px;
+    background-color: #283A46; */
+/* }  */
+.button-container{
+    padding-top: 20px;
+    height: 30px;
+    text-align: right;
+    padding-right:10px ;
+    padding-bottom: 20px;
+
+    
+}
+
+
+.search-box{
+    float: right;
+    background: #283A46;
+    height: 14px;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid #356680 1px;
+    
+}
+
+.search-txt{
+    background: none;
+    border: none;
+    color: #97A1A9;
+    outline: none;
+    float: left;
+    line-height: 15px;
+    width: 210px;
+    
+}
+
+.search-btn{
+    background: #283A46;
+}
+
+
+
+::placeholder{
+    color: #97A1A9;
+}
+
+.delete-box{
+    float: right;
+    padding-right: 5px;
+}
+
+.delete-txt{
+    margin-right: 10px;
+    background: none;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 15px;
+    border: 1px solid #97A1A9;
+    height: 35px;
+}
+
+.delete-btn{
+    color: #97A1A9;
+}
+
+
+
+
+.edit-box{
+    float: right;
+    padding-right: 5px;
+}
+
+.edit-txt{
+    margin-right: 10px;
+    background: none;
+    border-radius: 10px;
+    padding-bottom: px;
+    font-size: 15px;
+    border: 1px solid #97A1A9;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.edit-btn{
+    color: #97A1A9;
+}
+
+.add-box{
+    float: right;
+    padding-right: 5px;
+}
+
+.add-txt{
+    margin-right: 10px;
+    background: none;
+    border-radius: 10px;
+    padding-bottom: px;
+    font-size: 15px;
+    border: 1px solid #14AFF1;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.add-btn{
+    color: #FFFFFF;
+}
+
+
+
+
+a{
+    padding-right: 4px;
+    text-decoration: none;
+    
+}
+
+.delete{
+    float:right;
+}
+.edit{
+    float:right;
+}
+.add{
+    float:right;
+} */
+
+.command{
+    align-items: right;
+}
+.tab{
+    position:relative;
+    color:white;
+    top:2%;
+}
+th{
+    color:#97A1A9;
+}
+.table1{
+    border-collapse:collapse;
+    width:97%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-align:left;
+}
+.duedateheading{
+    position:relative;
+    left:15px;
+}
+tr{
+    align-items: left;
+    height:42px;
+   
+}
+.evenrow{
+    background-color: #283A46;
+    
+}
+.paymentdate{
+    text-align: right;
+    position:relative;
+    
+}
+.textppd{
+    position:absolute;
+    right:165px;
+}
+.invoiceamt{
+    text-align: right;
+    position:relative;
+}
+.invoicetxt{
+    position:absolute;
+    right:110px;
+
+}
+
+
+
+
+
+
+/* Designing Modals */
+
+/* ADD MODAL */
+.Modaladd{
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:auto;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal-add-contents{
+    width:850px;
+    background-color: #2A3E4C;   
+    border-radius:6px;
+    font-size:20px;
+}
+.modal-add-heading{
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left:30px;
+    border-bottom: 1px solid #23323d;
+    
+}
+.modal-add-heading span{
+    font-size:28px;
+    color:#fff;
+}
+#modal-add-cross{
+    float:right;
+    margin-right: 30px;
+    cursor:pointer;
+}
+.form-row-left{
+    margin-left:20px;
+    padding-top:13px;
+    padding-bottom:13px;    
+}
+.form-row-left label{
+    color:#fff;
+    opacity:0.65;
+}
+.form-row-left input{
+    width:200px;
+    height:20px;
+    float:right;
+    border:2px solid #356680;
+    border-radius:6px;
+    background-color: #283A46;
+    margin-right:10px;
+}
+
+
+
+
+
+.form-row-right label{
+    color:#fff;
+    opacity:0.65;
+    margin-left:20px;
+}
+.form-row-right{
+    margin-right:20px;
+    padding-top:13px;
+    padding-bottom:13px;
+}
+.form-row-right input{
+    margin-right:4px;
+    width:195px;
+    height:20px;
+    border:2px solid #356680;
+    border-radius:6px;
+    background-color: #283A46;
+    padding-top:2px;
+    padding-bottom:2px;
+    float:right;
+    color:#283a46;
+}
+.form-row-right textarea{
+    float:right;
+    margin-right:4px;
+    border:2px solid #356680;
+    background-color: #283A46;
+    border-radius:6px;
+    width:193px;
+    height:115px;
+}
+
+
+
+
+.row {
+    display: flex;
+}
+  
+
+
+
+
+
+
+
+  /* Create two equal columns that sits next to each other */
+.column {
+    flex: 100%;
+    padding: 10px;
+    height:200px;
+}
+
+/*Add modal footer start */
+.modal-add-box{
+    float:right;
+    margin-right:35px;
+    margin-top:10px;
+}
+.modal-clear-box{
+    float:right;
+    margin-right:40px;
+    margin-top:10px;
+}
+.modal-cancel-box{
+    float:left;
+    margin-left:40px;
+    margin-top:10px;
+}
+.modal-add-footer{
+    height:50px;
+    border-top: 1px solid #22313b;
+}
+.modal-clear-txt{
+    font-size:15px;
+    background-color:#283a46;
+    border:2px solid #14AFF1;
+    border-radius:6px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:9px;
+    color:#fff;
+    cursor:pointer;
+}
+.modal-add-txt{
+    font-size:15px;
+    background-color:#14AFF1;
+    border:2px solid #14AFF1;
+    border-radius:6px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:9px;
+    color:#fff;
+    cursor:pointer;
+}
+.modal-cancel-txt{
+    font-size:15px;
+    background-color: #2A3E4C;
+    border:none;
+    color:#14AFF1;
+    cursor:pointer;
+
+}
+ /* so that the modal remains hidden on page loading and gets activated untill some button is clicked*/
+.modal--hidden{
+    display:none;
+}
+
+
+
+
+
+/* ADD MODAL END */
+
+
+/* Delete Modal */
+.modal-delete {
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:auto;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal-delete-contents{
+    background-color: #2A3F4D;
+    border-radius:6px;
+    margin-right:30px;
+}
+.modal-delete-body{
+    width:480px;
+    background-color: #2A3E4C;   
+    border-radius:6px;
+    font-size:15px;
+    color:#fff;
+}
+.modal-delete-body p{
+    padding-left:20px;
+    padding-right:50px;
+}
+.modal-delete-heading{
+
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    border-bottom: 1px solid #23323d;
+    
+}
+.modal-delete-heading span{
+    font-size:28px;
+    color:#fff;
+}
+#modal-delete-cross{
+    float:right;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.modal-delete-box{
+    float:right;
+    margin-right:20px;
+    margin-bottom:20px;
+    
+}
+.modal-delete-cancel-box{
+    float:right;
+    margin-right:10px;
+}
+.modal-delete-footer{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:1px solid #23333d;
+}
+.modal-delete-txt{
+    font-size:15px;
+    background-color:#14AFF1;
+    border:2px solid #14AFF1;
+    border-radius:6px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:9px;
+    color:#fff;
+    cursor:pointer;
+}
+.modal-delete-cancel-txt{
+    font-size:15px;
+    background-color:#283a46;
+    border:2px solid #14AFF1;
+    border-radius:6px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:9px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* Modal Edit Styling */
+
+.modal-edit{
+    background-color: rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:auto;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal-edit-contents{
+    background-color: #2A3F4D;
+    border-radius:6px;
+    margin-right:30px;
+}
+.modal-edit-body{
+    width:420px;
+    height:300px;
+    background-color: #2A3E4C;   
+    border-radius:6px;
+    font-size:15px;
+    color:#fff;
+}
+.modal-edit-heading{
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+
+}
+.modal-edit-heading span{
+        font-size:22px;
+        color:#fff;
+}
+#modal-edit-cross{
+    float:right;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.modal-edit-save-box{
+    float:right;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.modal-edit-reset-box{
+    float:right;
+}
+.modal-edit-form-invamt{
+    margin-left:25px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+#modal-edit-amount{
+    float:right;
+    margin-right:20px;
+    width:240px;
+    height:20px;
+    border:2px solid #356680;
+    border-radius:6px;
+    background-color: #283A46;
+    position:relative;
+    bottom:5px;
+}
+
+.modal-edit-form-notes{
+    margin-left:25px;
+}
+.modal-edit-input-section{
+    height:240px;
+
+}
+.modal-edit-form-notes textarea{
+    height:160px;
+    width:242px;
+    float:right;
+    margin-right:20px;
+    border:2px solid #356680;
+    border-radius:6px;
+    background-color: #283A46;
+} 
+.modal-edit-cancel-box{
+    margin-left:35px;
+}
+.modal-edit-save-txt{
+    font-size:15px;
+    background-color:#14AFF1;
+    border:2px solid #14AFF1;
+    border-radius:6px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:9px;
+    color:#fff;
+    cursor:pointer;
+}
+.modal-edit-reset-txt{
+    font-size:15px;
+    background-color:#283a46;
+    border:2px solid #14AFF1;
+    border-radius:6px;
+    padding-top:4px;
+    padding-bottom:3px;
+    padding-left:9px;
+    color:#fff;
+    cursor:pointer;
+    margin-right:15px;
+}
+.modal-edit-cancel-txt{
+    font-size:15px;
+    background-color: #2A3E4C;
+    border:none;
+    color:#14AFF1;
+    margin-top:4px;
+}
+
+
+/* pagination buttons */
+.next-btn{
+    display: flex;
+    float: right;
+    position: fixed;
+    top: 55%;
+    right: 2.6%;
+    
+}
+.next-btn button{
+    background: #14AFF1;
+    border: none;
+    font-weight: 2px;
+    color: white;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px #00000069;
+}
+
+.prev-btn{
+    display: flex;
+    float: right;
+    position: fixed;
+    top: 55%;
+    left: 0.003%;
+    
+}
+.prev-btn button{
+    background: #39495E;
+    border: none;
+    font-weight: 2px;
+    color: #97A1A9;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px #00000069;
+    
+}
