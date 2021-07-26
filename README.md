@@ -33,11 +33,10 @@ An Application that displays the invoice details and predicts the date of paymen
 
 ## :computer: Screenshots
 - **Enter Money**
-<!--
-<img src="images/1.jpeg"/>
+<img src="readmeImages/homepage.png"/>
 <br>
 - **Select Drinks**
-<img src="images/2.jpeg"/>
+<img src="readmeImages/2.jpeg"/>
 <br>
 - **Billing Stage**
 <img src="images/3.jpeg"/>
@@ -50,7 +49,7 @@ An Application that displays the invoice details and predicts the date of paymen
 <br>
 - **Reset Option To Termninate Ongoing Transaction**
 <img src="images/6.jpeg"/>
--->
+
 ---
 
 ## :man: Project Created & Maintained By
