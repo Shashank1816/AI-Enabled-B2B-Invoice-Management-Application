@@ -27,6 +27,7 @@ An Application that displays the invoice details and predicts the date of paymen
 - **CSS**
 - **JS**
 - **JDBC**
+- **MySql**
 - **Java Servlets**
 
 ---
